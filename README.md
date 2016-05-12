@@ -4,16 +4,16 @@ Meu Tema WordPress Pessoal, também utilizado no meu site pessoal <a href="http:
 
 ## Para Fazer
 
-+ [] Página inicial
++ [ ] Página inicial
     + Cabeçalho
-        * [] Logo
-        * [] Menu Topo
+        * [ ] Logo
+        * [ ] Menu Topo
     + Conteúdo
-        + [] Lista portfolio com ajax load more 
+        + [ ] Lista portfolio com ajax load more 
     + Rodapé
-        + [] Redes sociais
-        + [] Form contato
-        + [] Copyright Text
+        + [ ] Redes sociais
+        + [ ] Form contato
+        + [ ] Copyright Text
 
 
 ### Post Types / Custom Taxonomys
