@@ -7,105 +7,96 @@ if ( post_password_required() ) { ?>
     </p>
 <?php
 return;
-}
-?>
+} ?>
 
 
 <?php
-/*
-    Se comentário Aberto if #1
-*/
+/**
+ * Forms
+ */
 if ( comments_open() ) : ?>
 
-<!--respond-->
-<div id="respond">
+    <!--respond-->
+    <div id="respond">
 
-    <?php
-    /*
-        Se necessário estar logado if #2
-    */
-    if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
+        <?php
+        if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 
-        <!-- se comentário precisa estar logado -->
-        <p class="need-login">Você precisa estar <strong> <a href="<?php echo wp_login_url( get_permalink() ); ?>"> logado </a></strong> para poder publicar um comentário neste artigo.</p>
+            <p class="need-login">
+                <?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'nexothemes'), get_bloginfo('url') . '/wp-login.php?redirect_to=' . get_permalink() ) ?>
+            </p>
 
-    <?php
-    /*
-        Se não necessário estar logado else #2
-    */else : ?>
+        <?php else : ?>
 
+        <!-- forms comment -->
+        <div class="forms-comments">
 
-    <!-- Inicio forms -->
-    <div class="forms-comments">
-
-        <!--cancel-->
-        <div class="cancel-comment-reply">
-            <?php cancel_comment_reply_link('Cancelar Resposta'); ?>
-        </div>
-        <!--/cancel-->
-
-        <!-- inicio formulário -->
-        <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" class="form-comentario" id="commentform">
-
-            <?php
-            /*
-            Se usuário logado if #3
-            */
-            if ( is_user_logged_in() ) : ?>
-                <p class="links-comentario">Logado como <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"> <?php echo $user_identity; ?> </a> - <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Sair dessa conta">
-                    Sair da conta » </a> </p>
-            <?php
-            /*
-            Se usuário não logado else #3
-            */else : ?>
-
-                <input class="input-text" type="text" name="author" id="author" value="" size="22" tabindex="1" placeholder="Nome" />
-
-                <input class="input-text" type="text" name="email" id="email" value="" size="22" tabindex="2" placeholder="E-mail (não será publicado)" />
-
-                <input class="input-text" type="text" name="url" id="url" value="" size="22" tabindex="3" placeholder="Site" />
-
-            <?php endif; // endif #3 ?>
-
-            <div class="caixa-mensagem <?php if ( is_user_logged_in() ) { ?>full<?php }?>">
-                <textarea name="comment" class="textarea-comentario" rows="7" placeholder="Comentário" id="comment" tabindex="4"></textarea>
+            <!--cancel-->
+            <div class="cancel-comment-reply">
+                <?php cancel_comment_reply_link(__( 'Cancel Reply', 'nexothemes' )); ?>
             </div>
+            <!--/cancel-->
 
-            <input name="submit" type="submit" class="enviar-button" id="submit" tabindex="5" value="Enviar" />
-            <?php comment_id_fields(); ?>
+            <!-- form comment -->
+            <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" class="form-comment" id="commentform">
 
-            <?php do_action('comment_form', $post->ID); ?>
-        </form>
+                <?php if ( is_user_logged_in() ) : ?>
+                    <p class="links-comentario">
+                        <?php _e( 'Logged in as', 'nexothemes' ); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a> - <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e( 'Logout', 'nexothemes' );?>"><?php _e( 'Logout', 'nexothemes' );?></a>
+                    </p>
+                <?php else : ?>
+
+                    <input class="input-text" type="text" name="author" id="author" value="" size="22" tabindex="1" placeholder="<?php _e( 'Name', 'nexothemes' );?>" />
+
+                    <input class="input-text" type="text" name="email" id="email" value="" size="22" tabindex="2" placeholder="<?php _e( 'E-mail (It will not be published)', 'nexothemes' ); ?>" />
+
+                    <input class="input-text" type="text" name="url" id="url" value="" size="22" tabindex="3" placeholder="<?php _e( 'Website', 'nexothemes' ); ?>" />
+
+
+
+                <?php endif; ?>
+
+                <div class="box-message <?php if ( is_user_logged_in() ) { ?>full<?php }?>">
+                    <textarea name="comment" class="textarea-comment" rows="7" placeholder="<?php _e( 'Message', 'nexothemes' );?>" id="comment" tabindex="4"></textarea>
+                </div>
+
+                <input name="submit" type="submit" class="send-cmt-button" id="submit" tabindex="5" value="<?php _e( 'Send', 'nexothemes' ) ?>" />
+
+                <?php comment_id_fields(); ?>
+
+                <?php do_action('comment_form', $post->ID); ?>
+            </form>
+            <!-- end form comment -->
+
+        </div>
+        <!-- end form comments -->
+
+        <?php endif; ?>
 
     </div>
-    <!-- fim .forms -->
+    <!-- end #respond -->
 
-    <?php endif; // endif #2 ?>
-
-</div>
-<!-- fim #respond -->
-
-<?php endif; // endif #1 ?>
+<?php endif; ?>
 
 
 
 <?php
 /**
-    Se Houver Comentário
-**/
+ * List comments
+ */
 if ( have_comments() ) : ?>
 
-    <!-- heading comentario -->
+    <!-- heading cmt -->
     <h3 class="heading-cmt">
-        <?php comments_number( '0 Comentários', '1 Comentário', '% Comentários' ); ?>
+        <?php comments_number( __( '0 Comments', 'nexothemes' ), __( '1 Comment', 'nexothemes' ), __( '% Comments', 'nexothemes' ); ?>
     </h3>
-    <!-- fim heading comentario -->
+    <!-- end heading cmt -->
 
-    <!-- lista de comentarios -->
+    <!-- list comments -->
     <ol class="commentlist">
-        <?php wp_list_comments('type=comment&callback=nexo_lista_comentarios'); ?>
+        <?php wp_list_comments('type=comment&callback=nexo_commentlist'); ?>
     </ol>
-    <!-- fim lista comentarios -->
+    <!-- end list comments -->
 
 
     <!-- navi comment rodape -->
@@ -118,23 +109,20 @@ if ( have_comments() ) : ?>
             <?php next_comments_link() ?>
         </div>
     </div>
-    <!-- fim nav comment rodape -->
+    <!-- end nav comment rodape -->
 
-<?php
-/**
-    Se não houver comentários
-*/
-else: // this is displayed if there are no comments so far ?>
+<?php else: ?>
 
     <?php  if ( comments_open() ) : ?>
 
-        <!-- Comentários Aberto -->
+        <?php // comment opened ?>
 
-    <?php else : // comments are closed ?>
+    <?php else : ?>
 
-        <!-- Comentários Fechados -->
-        <p class="nocomments">Comentário Fechado.</p>
+        <p class="nocomments">
+            <?php _e( 'Comments Closed', 'nexothemes' ); ?>
+        </p>
 
-    <?php endif; // fim se comentarios aberto ou fechado ?>
+    <?php endif; ?>
 
-<?php endif; // fim se houver comentarios ou não?>
+<?php endif; ?>

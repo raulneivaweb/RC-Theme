@@ -1,6 +1,6 @@
 <?php
 /**
- * Estruture comments default theme
+ * Structure comments default theme
  *
  * @package Nexo Themes
  * @author Rhuan Carlos <rhcarlosweb@gmail.com>
@@ -26,10 +26,10 @@ global $nexo_options;
  * @param  array $args
  * @param  array $depth
  */
-function nexo_lista_comentarios($comment, $args, $depth) {
+function nexo_commentlist($comment, $args, $depth) {
     $GLOBALS['comment'] = $comment;
 
-    /* Lista comentários
+    /* List comments
        ========================================================================== */
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">

@@ -6,7 +6,7 @@
  * @version 1.0
  */
 foreach ( glob( dirname( __FILE__ ) . '/widgets/*.php' ) as $file ) {
-    locate_template( $file, true );
+    require_once( $file, true );
 }
 
 ?>

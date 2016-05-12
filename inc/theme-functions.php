@@ -10,14 +10,6 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 
 
 /* ==========================================================================
-   Global Options Panel
-   ========================================================================== */
-global $nexo_options;
-
-
-
-
-/* ==========================================================================
    Cleanup Header
    ========================================================================== */
 remove_action('wp_head', 'wp_generator');
@@ -51,65 +43,6 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 <?php }
     add_action( 'wp_head', 'theme_slug_render_title' );
-}
-
-
-
-
-/**
- * Favicons
- * @version 1.0
- */
-function nexo_favicons() {
-    // global panel options
-    global $nexo_options;
-
-    // if has favicon
-    if($nexo_options['favicon'] != '') {
-
-        /**
-         * Favicon URL
-         * @var string
-         */
-        $favicon = $nexo_options['favicon']['url'];
-
-        // conditional
-        if($favicon) { ?>
-            <link rel="icon" type="image/png" href="<?php echo $favicon;?>" sizes="32x32">
-            <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $favicon;?>">
-            <link rel="apple-touch-icon" sizes="120x120" href="<?php echo $favicon;?>">
-            <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $favicon;?>">
-            <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $favicon;?>">
-            <meta name="msapplication-TileColor" content="#db0000">
-            <meta name="msapplication-TileImage" content="<?php echo $favicon;?>">
-        <?php }
-    }
-}
-
-
-
-
-/**
- * Codes header
- * @return Show additional codes before closing </head> tag
- */
-function nexo_header_codes() {
-    global $nexo_options;
-
-    echo $nexo_options['header_codes'];
-}
-
-
-
-
-/**
- * Codes footer
- * @version 1.0
- */
-function nexo_footer_codes() {
-    global $nexo_options;
-
-    echo $nexo_options['footer_codes'];
 }
 
 
@@ -556,5 +489,5 @@ function nexo_pagenavi() {
    Included other functions theme
    ========================================================================== */
 foreach ( glob( dirname( __FILE__ ) . '/functions/*.php' ) as $file ) {
-    locate_template( $file, true );
+    require_once( $file, true );
 } ?>
