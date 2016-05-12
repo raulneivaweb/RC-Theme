@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nexo Themes\n"
+"POT-Creation-Date: 2016-03-31 09:25-0300\n"
+"PO-Revision-Date: 2016-03-31 09:26-0300\n"
+"Last-Translator: Rhuan Carlos <rhcarlosweb@gmail.com>\n"
+"Language-Team: Rhuan Carlos <rhcarlosweb@gmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: core/admin/redux-extensions\n"
+"X-Poedit-SearchPathExcluded-2: core/admin/assets\n"
+"X-Poedit-SearchPathExcluded-3: core/metas\n"
+"X-Poedit-SearchPathExcluded-4: core/admin/redux-framework\n"
+
+#: comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Por favor não carregue essa página diretamente. Obrigado!"
+
+#: comments.php:6
+msgid ""
+"This article need password. Please insert the password to show the comments."
+msgstr ""
+"Esse artigo está protegido por senha. Favor insira a senha para mostrar os "
+"comentários."
+
+#: core/admin/options-init.php:22 core/admin/options-init.php:28
+msgid "Nexo Themes"
+msgstr "Nexo Themes"
+
+#: core/admin/options-init.php:24 core/admin/options-init.php:25
+msgid ""
+"Visit our store to more WordPress Theme <a href=\"http://www.nexothemes.com"
+"\" target=\"_blank\">Nexo Themes</a>"
+msgstr ""
+"Visite nossa loja para mais Temas WordPress <a href=\"http://www.nexothemes."
+"com\" target=\"_blank\">Nexo Themes</a>"
+
+#: core/admin/options-init.php:80
+msgid "More Themes"
+msgstr "Mais Temas"
+
+#: core/admin/options-init.php:85
+msgid "Like our facebook page"
+msgstr "Curta nossa página no facebook"
+
+#: core/admin/options-init.php:109
+msgid "General"
+msgstr "Geral"
+
+#: core/admin/options-init.php:120
+msgid "Visual"
+msgstr "Visual"
+
+#: core/admin/options-init.php:131
+msgid "Favicon"
+msgstr "Favicon"
+
+#: core/admin/options-init.php:132
+msgid "Upload a new favicon to your website"
+msgstr "Enviar um novo favicon"
+
+#: core/admin/options-init.php:135
+msgid "No media selected"
+msgstr "Nenhuma imagem selecionada"
+
+#: core/admin/options-init.php:149
+msgid "Social Network"
+msgstr "Redes Sociais"
+
+#: core/admin/options-init.php:159
+msgid "Facebook"
+msgstr "Facebook"
+
+#: core/admin/options-init.php:160
+msgid "Insert only the username of your Facebook page"
+msgstr "Inserir apenas o username da página do Facebook"
+
+#: core/admin/options-init.php:174
+msgid "Additional Codes"
+msgstr "Códigos Adicionais"
+
+#: core/admin/options-init.php:184
+msgid "Header Codes"
+msgstr "Códigos Topo"
+
+#: core/admin/options-init.php:185
+msgid "Codes input here is added before close <code>/head</code> tag"
+msgstr ""
+"Códigos inseridos aqui serão inseridos antes de fechar a tag <code>/head</"
+"code>"
+
+#: core/admin/options-init.php:195
+msgid "Footer Codes"
+msgstr "Códigos Rodapé"
+
+#: core/admin/options-init.php:196
+msgid "Codes input here is added before close <code>/body</code> tag on footer"
+msgstr ""
+"Códigos inseridos aqui serão inseridos antes de fechar a tag <code>/body</"
+"code>"
+
+#: inc/theme-comments.php:14 inc/theme-functions.php:6
+msgid "You do not have sufficient permissions to access this page"
+msgstr "Você não tem permissão suficiente para acessar essa página"
+
+#: inc/theme-comments.php:51
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: inc/theme-comments.php:84
+msgid "Custom Avatar"
+msgstr "Avatar Personalizado"
+
+#: inc/theme-functions.php:300
+msgid "Could not read image size"
+msgstr "Não pode ler a imagem"
+
+#: inc/theme-functions.php:503
+msgid "[Read more]"
+msgstr "[Leia mais]"
+
+#: inc/theme-functions.php:547
+msgid "Pages"
+msgstr "Páginas"
+
+#. Theme Name of the plugin/theme
+msgid "Nexo Themes Base Theme"
+msgstr "Nexo Themes Base Theme"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.nexothemes.com"
+msgstr "http://www.nexothemes.com"
+
+#. Description of the plugin/theme
+msgid ""
+"Theme Developed by <a href=\"http://www.nexothemes.com\">Nexo Themes</a> "
+"WordPress Premium Themes"
+msgstr ""
+"Tema Desenvolvido por <a href=\"http://www.nexothemes.com\">Nexo Themes</a> "
+"WordPress Premium Themes"
+
+#. Author of the plugin/theme
+msgid "Nexo Themes Team"
+msgstr "Equipe Nexo Themes"
+
+#~ msgid ""
+#~ "See more themes our store to more WordPress Theme <a href=\"http://www."
+#~ "nexothemes.com\" target=\"_blank\">Nexo Themes</a>"
+#~ msgstr "Veja mais temas ou visite nossa loja "
