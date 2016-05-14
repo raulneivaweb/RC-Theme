@@ -489,5 +489,5 @@ function nexo_pagenavi() {
    Included other functions theme
    ========================================================================== */
 foreach ( glob( dirname( __FILE__ ) . '/functions/*.php' ) as $file ) {
-    require_once( $file, true );
+    require_once( $file );
 } ?>
