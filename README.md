@@ -29,4 +29,4 @@ Não estarei usando a versão PRO do plugin por não ser permitido compartilhar 
 
 Os campos serão inicialmente registrados em php, e uma possível atualização de embed do plugin no proprio tema para registro dos campos em .json
 
-[**Necessário estar instalado o plugin para funcionar campos nos custom post types, parceiros e portfolio**]
+**Necessário estar instalado o plugin para funcionar campos nos custom post types, parceiros e portfolio**
