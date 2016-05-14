@@ -22,7 +22,11 @@ Meu Tema WordPress Pessoal, também utilizado no meu site pessoal <a href="http:
     + [x] Tax Parceiros
 
 
-## Plugins usados no desenvolvimento
+## Outros
+
++ [ ] Utilizar TGM para forçar instalar plugin ACF
+
+### Plugins usados no desenvolvimento
 
 #### <a href="https://wordpress.org/plugins/advanced-custom-fields/" target="_blank">Advanced Custom Fields</a>
 Não estarei usando a versão PRO do plugin por não ser permitido compartilhar o plugin em temas gratuitos. Mas fique a vontade em usar a versão pro do plugin. Esse tema está sendo feito com as funções básicas do plugin.
