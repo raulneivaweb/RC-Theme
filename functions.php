@@ -23,6 +23,9 @@ $includes = array(
     // Theme functions
     'inc/theme-functions.php',
 
+    // Theme Cpts
+    'inc/theme-cpt.php',
+
     // Comments
     'inc/theme-comments.php',
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Nexo Themes\n"
-"POT-Creation-Date: 2016-03-31 09:25-0300\n"
-"PO-Revision-Date: 2016-03-31 09:26-0300\n"
+"POT-Creation-Date: 2016-05-14 17:15-0300\n"
+"PO-Revision-Date: 2016-05-14 17:22-0300\n"
 "Last-Translator: Rhuan Carlos <rhcarlosweb@gmail.com>\n"
 "Language-Team: Rhuan Carlos <rhcarlosweb@gmail.com>\n"
 "Language: pt_BR\n"
@@ -35,81 +35,61 @@ msgstr ""
 "Esse artigo está protegido por senha. Favor insira a senha para mostrar os "
 "comentários."
 
-#: core/admin/options-init.php:22 core/admin/options-init.php:28
-msgid "Nexo Themes"
-msgstr "Nexo Themes"
-
-#: core/admin/options-init.php:24 core/admin/options-init.php:25
+#: comments.php:26
+#, php-format
 msgid ""
-"Visit our store to more WordPress Theme <a href=\"http://www.nexothemes.com"
-"\" target=\"_blank\">Nexo Themes</a>"
+"You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
 msgstr ""
-"Visite nossa loja para mais Temas WordPress <a href=\"http://www.nexothemes."
-"com\" target=\"_blank\">Nexo Themes</a>"
+"Você precisa estar <a href=\"%s\" title=\"Logado\">logado</a> para postar um "
+"comentário."
 
-#: core/admin/options-init.php:80
-msgid "More Themes"
-msgstr "Mais Temas"
+#: comments.php:36
+msgid "Cancel Reply"
+msgstr "Cancelar Resposta"
 
-#: core/admin/options-init.php:85
-msgid "Like our facebook page"
-msgstr "Curta nossa página no facebook"
+#: comments.php:45
+msgid "Logged in as"
+msgstr "Logado como"
 
-#: core/admin/options-init.php:109
-msgid "General"
-msgstr "Geral"
+#: comments.php:45
+msgid "Logout"
+msgstr "Sair da conta"
 
-#: core/admin/options-init.php:120
-msgid "Visual"
-msgstr "Visual"
+#: comments.php:49
+msgid "Name"
+msgstr "Nome"
 
-#: core/admin/options-init.php:131
-msgid "Favicon"
-msgstr "Favicon"
+#: comments.php:51
+msgid "E-mail (It will not be published)"
+msgstr "E-mail (Não será publicado)"
 
-#: core/admin/options-init.php:132
-msgid "Upload a new favicon to your website"
-msgstr "Enviar um novo favicon"
+#: comments.php:53
+msgid "Website"
+msgstr "Site"
 
-#: core/admin/options-init.php:135
-msgid "No media selected"
-msgstr "Nenhuma imagem selecionada"
+#: comments.php:60
+msgid "Message"
+msgstr "Mensagem"
 
-#: core/admin/options-init.php:149
-msgid "Social Network"
-msgstr "Redes Sociais"
+#: comments.php:63
+msgid "Send"
+msgstr "Enviar"
 
-#: core/admin/options-init.php:159
-msgid "Facebook"
-msgstr "Facebook"
+#: comments.php:91
+msgid "0 Comments"
+msgstr "0 Comentários"
 
-#: core/admin/options-init.php:160
-msgid "Insert only the username of your Facebook page"
-msgstr "Inserir apenas o username da página do Facebook"
+#: comments.php:91
+msgid "1 Comment"
+msgstr "1 Comentário"
 
-#: core/admin/options-init.php:174
-msgid "Additional Codes"
-msgstr "Códigos Adicionais"
+#: comments.php:91
+msgid "% Comments"
+msgstr "% Comentários"
 
-#: core/admin/options-init.php:184
-msgid "Header Codes"
-msgstr "Códigos Topo"
-
-#: core/admin/options-init.php:185
-msgid "Codes input here is added before close <code>/head</code> tag"
-msgstr ""
-"Códigos inseridos aqui serão inseridos antes de fechar a tag <code>/head</"
-"code>"
-
-#: core/admin/options-init.php:195
-msgid "Footer Codes"
-msgstr "Códigos Rodapé"
-
-#: core/admin/options-init.php:196
-msgid "Codes input here is added before close <code>/body</code> tag on footer"
-msgstr ""
-"Códigos inseridos aqui serão inseridos antes de fechar a tag <code>/body</"
-"code>"
+#: comments.php:123
+msgid "Comments Closed"
+msgstr "Comentários Fechado"
 
 #: inc/theme-comments.php:14 inc/theme-functions.php:6
 msgid "You do not have sufficient permissions to access this page"
@@ -124,26 +104,262 @@ msgstr "%s"
 msgid "Custom Avatar"
 msgstr "Avatar Personalizado"
 
-#: inc/theme-functions.php:300
+#: inc/theme-cpt.php:15 inc/theme-cpt.php:16 inc/theme-cpt.php:17
+#: inc/theme-cpt.php:18 inc/theme-cpt.php:42
+msgid "Portfolio"
+msgstr "Portfólio"
+
+#: inc/theme-cpt.php:19
+msgid "Portfolio Archives"
+msgstr "Arquivo Portfólio"
+
+#: inc/theme-cpt.php:20
+msgid "Parent Portfolio:"
+msgstr "Portfólio Pai:"
+
+#: inc/theme-cpt.php:21
+msgid "All Portfolio"
+msgstr "Todos Portfólios"
+
+#: inc/theme-cpt.php:22
+msgid "Add New Portfolio"
+msgstr "Adicionar Novo Portfólio"
+
+#: inc/theme-cpt.php:23
+msgid "Add New"
+msgstr "Adicionar Novo"
+
+#: inc/theme-cpt.php:24
+msgid "New Portfolio"
+msgstr "Novo Portfólio"
+
+#: inc/theme-cpt.php:25
+msgid "Edit Portfolio"
+msgstr "Editar Portfólio"
+
+#: inc/theme-cpt.php:26
+msgid "Update Portfolio"
+msgstr "Atualizar Portfólio"
+
+#: inc/theme-cpt.php:27
+msgid "View Portfolio"
+msgstr "Visualizar Portfólio"
+
+#: inc/theme-cpt.php:28
+msgid "Search Portfolio"
+msgstr "Buscar Portfólio"
+
+#: inc/theme-cpt.php:29
+msgid "Not found"
+msgstr "Não encontrado"
+
+#: inc/theme-cpt.php:30
+msgid "Not found in Trash"
+msgstr "Nada encontrado na Lixeira"
+
+#: inc/theme-cpt.php:31
+msgid "Featured Image"
+msgstr "Imagem Destacada"
+
+#: inc/theme-cpt.php:32
+msgid "Set featured image"
+msgstr "Definir imagem destacada"
+
+#: inc/theme-cpt.php:33
+msgid "Remove featured image"
+msgstr "Remover imagem destacada"
+
+#: inc/theme-cpt.php:34
+msgid "Use as featured image"
+msgstr "Usar como imagem destacada"
+
+#: inc/theme-cpt.php:35
+msgid "Insert into portfolio"
+msgstr "Inserir no portfólio"
+
+#: inc/theme-cpt.php:36
+msgid "Uploaded to this portfolio"
+msgstr "Enviar paara esse portfólio"
+
+#: inc/theme-cpt.php:37
+msgid "Portfolio list"
+msgstr "Lista Portfólio"
+
+#: inc/theme-cpt.php:38
+msgid "Portfolio list navigation"
+msgstr "Lista Portfólio navegação"
+
+#: inc/theme-cpt.php:39
+msgid "Filter portfolio list"
+msgstr "Filtrar lista portfólio"
+
+#: inc/theme-cpt.php:43
+msgid "Itens Portfolio"
+msgstr "Itens Portfólio"
+
+#: inc/theme-cpt.php:79
+msgid "Categories Portfolio"
+msgstr "Categorias Portfólio"
+
+#: inc/theme-cpt.php:80 inc/theme-cpt.php:81
+msgid "Category Portfolio"
+msgstr "Categoria Portfólio"
+
+#: inc/theme-cpt.php:82
+msgid "All Categories"
+msgstr "Todas Categorias"
+
+#: inc/theme-cpt.php:83
+msgid "Parent Category"
+msgstr "Categoria Pai"
+
+#: inc/theme-cpt.php:84
+msgid "Parent Category:"
+msgstr "Categoria Pai:"
+
+#: inc/theme-cpt.php:85
+msgid "New Category"
+msgstr "Nova Categoria"
+
+#: inc/theme-cpt.php:86
+msgid "Add New Category"
+msgstr "Adicionar Nova Categoria"
+
+#: inc/theme-cpt.php:87
+msgid "Edit Category"
+msgstr "Editar Categoria"
+
+#: inc/theme-cpt.php:88
+msgid "Update Category"
+msgstr "Atualizar Categoria"
+
+#: inc/theme-cpt.php:89
+msgid "View Category"
+msgstr "Visualizar Categoria"
+
+#: inc/theme-cpt.php:90
+msgid "Separate categories with commas"
+msgstr "Separar categorias por vírgula"
+
+#: inc/theme-cpt.php:91
+msgid "Add or remove categories"
+msgstr "Adicionar ou remover categorias"
+
+#: inc/theme-cpt.php:92 inc/theme-cpt.php:137
+msgid "Choose from the most used"
+msgstr "Escolha uma das mais usadas"
+
+#: inc/theme-cpt.php:93
+msgid "Popular Categories"
+msgstr "Categorias Populares"
+
+#: inc/theme-cpt.php:94
+msgid "Search Categories"
+msgstr "Buscar Categorias"
+
+#: inc/theme-cpt.php:95 inc/theme-cpt.php:140
+msgid "Not Found"
+msgstr "Não Encontrado"
+
+#: inc/theme-cpt.php:96
+msgid "No category"
+msgstr "Sem categoria"
+
+#: inc/theme-cpt.php:97
+msgid "Categories list"
+msgstr "Lista Categorias"
+
+#: inc/theme-cpt.php:98
+msgid "Categories list navigation"
+msgstr "Categorias Lista navegação"
+
+#: inc/theme-cpt.php:124 inc/theme-cpt.php:126
+msgid "Partners"
+msgstr "Parceiros"
+
+#: inc/theme-cpt.php:125
+msgid "Partner"
+msgstr "Parceiro"
+
+#: inc/theme-cpt.php:127
+msgid "All Partners"
+msgstr "Todos Parceiros"
+
+#: inc/theme-cpt.php:128
+msgid "Parent Partner"
+msgstr "Parceiro Pai"
+
+#: inc/theme-cpt.php:129
+msgid "Parent Partner:"
+msgstr "Parceiro Pai:"
+
+#: inc/theme-cpt.php:130
+msgid "New Partner"
+msgstr "Novo Parceiro"
+
+#: inc/theme-cpt.php:131
+msgid "Add New Partner"
+msgstr "Adicionar Novo Parceiro"
+
+#: inc/theme-cpt.php:132
+msgid "Edit Partner"
+msgstr "Editar Parceiro"
+
+#: inc/theme-cpt.php:133
+msgid "Update Partner"
+msgstr "Atualizar Parceiro"
+
+#: inc/theme-cpt.php:134
+msgid "View Partner"
+msgstr "Visualizar Parceiro"
+
+#: inc/theme-cpt.php:135
+msgid "Separate partners with commas"
+msgstr "Separar parceiros por vírgula"
+
+#: inc/theme-cpt.php:136
+msgid "Add or remove partners"
+msgstr "Adicionar ou remover parceiros"
+
+#: inc/theme-cpt.php:138
+msgid "Popular Partners"
+msgstr "Parceiros Populares"
+
+#: inc/theme-cpt.php:139
+msgid "Search Partners"
+msgstr "Buscar Parceiros"
+
+#: inc/theme-cpt.php:141
+msgid "No partner"
+msgstr "Sem parceiros"
+
+#: inc/theme-cpt.php:142
+msgid "Partners list"
+msgstr "Lista de Parceiros"
+
+#: inc/theme-cpt.php:143
+msgid "Partners list navigation"
+msgstr "Lista de Parceiros navegação"
+
+#: inc/theme-functions.php:233
 msgid "Could not read image size"
 msgstr "Não pode ler a imagem"
 
-#: inc/theme-functions.php:503
+#: inc/theme-functions.php:436
 msgid "[Read more]"
 msgstr "[Leia mais]"
 
-#: inc/theme-functions.php:547
+#: inc/theme-functions.php:480
 msgid "Pages"
 msgstr "Páginas"
 
 #. Theme Name of the plugin/theme
-msgid "Nexo Themes Base Theme"
-msgstr "Nexo Themes Base Theme"
+msgid "Rhuan Carlos WordPress Theme"
+msgstr "Rhuan Carlos Tema WordPress"
 
 #. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "http://www.nexothemes.com"
-msgstr "http://www.nexothemes.com"
+msgid "http://www.rhuancarlos.com.com"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
@@ -156,6 +372,73 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Nexo Themes Team"
 msgstr "Equipe Nexo Themes"
+
+#. Author URI of the plugin/theme
+msgid "http://www.nexothemes.com"
+msgstr "http://www.nexothemes.com"
+
+#~ msgid "Nexo Themes"
+#~ msgstr "Nexo Themes"
+
+#~ msgid ""
+#~ "Visit our store to more WordPress Theme <a href=\"http://www.nexothemes."
+#~ "com\" target=\"_blank\">Nexo Themes</a>"
+#~ msgstr ""
+#~ "Visite nossa loja para mais Temas WordPress <a href=\"http://www."
+#~ "nexothemes.com\" target=\"_blank\">Nexo Themes</a>"
+
+#~ msgid "More Themes"
+#~ msgstr "Mais Temas"
+
+#~ msgid "Like our facebook page"
+#~ msgstr "Curta nossa página no facebook"
+
+#~ msgid "General"
+#~ msgstr "Geral"
+
+#~ msgid "Visual"
+#~ msgstr "Visual"
+
+#~ msgid "Favicon"
+#~ msgstr "Favicon"
+
+#~ msgid "Upload a new favicon to your website"
+#~ msgstr "Enviar um novo favicon"
+
+#~ msgid "No media selected"
+#~ msgstr "Nenhuma imagem selecionada"
+
+#~ msgid "Social Network"
+#~ msgstr "Redes Sociais"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Insert only the username of your Facebook page"
+#~ msgstr "Inserir apenas o username da página do Facebook"
+
+#~ msgid "Additional Codes"
+#~ msgstr "Códigos Adicionais"
+
+#~ msgid "Header Codes"
+#~ msgstr "Códigos Topo"
+
+#~ msgid "Codes input here is added before close <code>/head</code> tag"
+#~ msgstr ""
+#~ "Códigos inseridos aqui serão inseridos antes de fechar a tag <code>/head</"
+#~ "code>"
+
+#~ msgid "Footer Codes"
+#~ msgstr "Códigos Rodapé"
+
+#~ msgid ""
+#~ "Codes input here is added before close <code>/body</code> tag on footer"
+#~ msgstr ""
+#~ "Códigos inseridos aqui serão inseridos antes de fechar a tag <code>/body</"
+#~ "code>"
+
+#~ msgid "Nexo Themes Base Theme"
+#~ msgstr "Nexo Themes Base Theme"
 
 #~ msgid ""
 #~ "See more themes our store to more WordPress Theme <a href=\"http://www."
