@@ -12,7 +12,7 @@ function nexo_javascripts_assets() {
     wp_enqueue_script('hoverIntent', null, array('jquery'), null, true);
 
     // main
-    $ver_js = filemtime(get_template_directory() . '/inc/js/main.js');
+    $ver_js = filemtime( NEXO_THEME_PATH . 'inc/js/main.js' );
     wp_enqueue_script( 'main', NEXO_THEME_DIR . 'inc/js/main.js', array('jquery'), $ver_js, true );
 }
 add_action('wp_enqueue_scripts', 'nexo_javascripts_assets', 100);
