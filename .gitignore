@@ -1,6 +1,11 @@
 # Prepos
 prepos.cfg
 
+# PSD Files
+source-psd/logo-ai.ai
+source-psd/logo-ai.svg
+source-psd/logo-ai2.svg
+
 # Compiled source #
 ###################
 *.com
