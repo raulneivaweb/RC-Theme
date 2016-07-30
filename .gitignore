@@ -1,10 +1,12 @@
 # Prepos
 prepos.cfg
 
+# Node
+node_modules
+npm-debug.log
+
 # PSD Files
-source-psd/logo-ai.ai
-source-psd/logo-ai.svg
-source-psd/logo-ai2.svg
+source-psd/**
 
 # Compiled source #
 ###################
